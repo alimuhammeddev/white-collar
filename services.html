@@ -34,7 +34,7 @@
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="/index.html">Home</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="/about us.html">About</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Pages</a></li>
-                    <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Services</a></li>
+                    <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="/services.html">Services</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Blog</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Contact</a></li>
                 </ul>
@@ -65,7 +65,7 @@
                                 <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="#">Pages</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="#">Services</a>
+                                <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="/services.html">Services</a>
                             </li>
                             <li class="mb-1">
                                 <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="#">Blog</a>
@@ -113,7 +113,7 @@
                             <h1 class="text-lg lg:text-2xl font-semibold">Financial Consultancy</h1>
                             <h1 class="mt-2 mx-auto text-[#6B77E5] text-lg font-semibold">Read More</h1>
                         </div>
-                        <img src="/img/house icon.png" class="lg:ml-16 ml-5" alt="">
+                        <img src="/img/house icon.png" class="lg:ml-16 ml-5 w-14" alt="">
                     </div>
                 </div>
                 <div class="p-4">
@@ -160,5 +160,55 @@
             </div>
         </div>
      </div>
+
+
+
+
+
+
+
+
+     <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function() {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
