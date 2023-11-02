@@ -14,11 +14,14 @@
     body{
         font-family: 'Dosis', sans-serif;
     }
+    html{
+        scroll-behavior: smooth;
+    }
 </style>
 <body>
     <div>
         <div class="container">
-            <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+            <nav class="fixed px-4 py-4 w-full top-0 flex justify-between items-center bg-white">
                 <a class="text-sm leading-none md:px-16 -ml-6" href="#">
                     <img src="/img/Slice 2.png" width="70%" alt="">
                 </a>
@@ -33,7 +36,6 @@
                 <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-10 lg:ml-5">
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="/index.html">Home</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="/about us.html">About</a></li>
-                    <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Pages</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="/services.html">Services</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Blog</a></li>
                     <li><a class="text-lg text-[#37393F] hover:text-gray-400 transition duration-500 font-semibold" href="#">Contact</a></li>
@@ -62,9 +64,6 @@
                                 <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="/about us.html">About</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="#">Pages</a>
-                            </li>
-                            <li class="mb-1">
                                 <a class="block p-4 text-base font-medium text-[#37393F] hover:bg-gray-200 hover:text-gray-600 rounded transition ease-out duration-700" href="/services.html">Services</a>
                             </li>
                             <li class="mb-1">
@@ -88,7 +87,7 @@
     <div class="bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url(/img/Photo.jpg);">
        <div class="container p-4 lg:p-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            <div class="bg-[#37393FE8] p-5 lg:p-10 -mt-10 lg:-mb-10 -mb-4 lg:-ml-10 -ml-4 -mr-4">
+            <div class="bg-[#37393FE8] p-5 lg:p-10 mt-5 lg:-mb-10 -mb-4 lg:-ml-10 -ml-4 -mr-4">
                 <h1 class="text-[#FFFFFF] text-xl lg:mt-24 mt-10 font-medium"><i class="fa-solid fa-square-full fa-2xs" style="color: #40DDB6;"></i> Welcome to Whitecollar Solution</h1>
                 <h2 class="text-3xl lg:text-5xl mt-3 font-bold text-[#FFFFFF]">The Best Value for <span class="text-[#40DDB6]">Business</span> and Corporation.</h2>
                 <p class="mt-2 text-lg lg:text-2xl text-[#B9B9B9]" style="font-weight: 500;">Collaboratively administrate empowered markets plug and play networks dynamically procrastinated.</p><br>
